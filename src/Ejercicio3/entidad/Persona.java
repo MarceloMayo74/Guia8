@@ -1,4 +1,4 @@
-package Ejercicio3.entidades;
+package Ejercicio3.entidad;
 
 public class Persona {
 

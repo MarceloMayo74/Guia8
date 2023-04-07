@@ -14,8 +14,8 @@
  */
 package Ejercicio2;
 
-import Ejercicio2.entidades.Cafetera;
-import Ejercicio2.servicios.CafeteraServicio;
+import Ejercicio2.entidad.Cafetera;
+import Ejercicio2.servicio.CafeteraServicio;
 import java.util.Scanner;
 
 public class Ejercicio2 {

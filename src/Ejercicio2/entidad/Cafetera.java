@@ -1,4 +1,4 @@
-package Ejercicio2.entidades;
+package Ejercicio2.entidad;
 
 public class Cafetera {
 

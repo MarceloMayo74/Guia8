@@ -20,21 +20,19 @@
  */
 package Ejercicio1;
 
-import Ejercicio1.entidades.CuentaBancaria;
-import Ejercicio1.servicios.CuentaBancariaServicio;
+import Ejercicio1.entidad.CuentaBancaria;
+
+import Ejercicio1.servicio.CuentaBancariaServicio;
+
 import java.util.Scanner;
 
 public class Ejercicio1 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-
-        //Definimos Servicio para acceder a los metodos de la clase servicio
         CuentaBancariaServicio servicio = new CuentaBancariaServicio();
-        //Creamos cuenta
         CuentaBancaria cuenta = servicio.crearCuenta();
         int menu = -1;
-
         do {
             System.out.println();
             System.out.println();
@@ -47,20 +45,23 @@ public class Ejercicio1 {
             System.out.println("0. SALIR");
             menu = leer.nextInt();
             switch (menu) {
-                case 1 ->
+                case 1:
                     servicio.ingresar(cuenta);
-                case 2 ->
+                    break;
+                case 2:
                     servicio.retirar(cuenta);
-                case 3 ->
+                    break;
+                case 3:
                     servicio.extraccionRapida(cuenta);
-                case 4 ->
+                    break;
+                case 4:
                     servicio.consultarSaldo(cuenta);
-                case 5 ->
+                    break;
+                case 5:
                     servicio.consultarDatos(cuenta);
-                default -> {
-                }
+                    break;
+                default:
             }
         } while (menu != 0);
-
     }
 }

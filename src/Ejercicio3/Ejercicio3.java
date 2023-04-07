@@ -15,8 +15,8 @@
  */
 package Ejercicio3;
 
-import Ejercicio3.entidades.Persona;
-import Ejercicio3.servicios.PersonaServicio;
+import Ejercicio3.entidad.Persona;
+import Ejercicio3.servicio.PersonaServicio;
 
 /**
  *

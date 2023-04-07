@@ -1,6 +1,6 @@
-package Ejercicio3.servicios;
+package Ejercicio3.servicio;
 
-import Ejercicio3.entidades.Persona;
+import Ejercicio3.entidad.Persona;
 import java.util.Scanner;
 
 public class PersonaServicio {
