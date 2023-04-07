@@ -30,8 +30,8 @@ public class Ejercicio1 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        CuentaBancariaServicio servicio = new CuentaBancariaServicio();
-        CuentaBancaria cuenta = servicio.crearCuenta();
+        CuentaBancariaServicio cuentaBancariaServicio1 = new CuentaBancariaServicio();
+        CuentaBancaria cuentaBancaria1 = cuentaBancariaServicio1.crearCuenta();
         int menu = -1;
         do {
             System.out.println();
@@ -45,22 +45,13 @@ public class Ejercicio1 {
             System.out.println("0. SALIR");
             menu = leer.nextInt();
             switch (menu) {
-                case 1:
-                    servicio.ingresar(cuenta);
-                    break;
-                case 2:
-                    servicio.retirar(cuenta);
-                    break;
-                case 3:
-                    servicio.extraccionRapida(cuenta);
-                    break;
-                case 4:
-                    servicio.consultarSaldo(cuenta);
-                    break;
-                case 5:
-                    servicio.consultarDatos(cuenta);
-                    break;
-                default:
+                case 1 -> cuentaBancariaServicio1.ingresar(cuentaBancaria1);
+                case 2 -> cuentaBancariaServicio1.retirar(cuentaBancaria1);
+                case 3 -> cuentaBancariaServicio1.extraccionRapida(cuentaBancaria1);
+                case 4 -> cuentaBancariaServicio1.consultarSaldo(cuentaBancaria1);
+                case 5 -> cuentaBancariaServicio1.consultarDatos(cuentaBancaria1);
+                default -> {
+                }
             }
         } while (menu != 0);
     }
