@@ -15,16 +15,17 @@
 package Ejercicio2;
 
 import Ejercicio2.entidad.Cafetera;
+
 import Ejercicio2.servicio.CafeteraServicio;
+
 import java.util.Scanner;
 
 public class Ejercicio2 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
-        CafeteraServicio servicio = new CafeteraServicio();
-        Cafetera cafetera = new Cafetera(6000, 2500);
-
+        CafeteraServicio cafeteraServicio = new CafeteraServicio();
+        Cafetera cafetera1 = cafeteraServicio.crearCafetera();
         int menu = -1;
         do {
             System.out.println();
@@ -38,13 +39,17 @@ public class Ejercicio2 {
             System.out.println("6. SALIR");
             menu = leer.nextInt();
             switch (menu) {
-                case 1 -> cafetera.setCantidadActual(servicio.llenarCafetera(cafetera));
-                case 2 -> servicio.servirTaza(cafetera);
-                case 3 -> servicio.vaciarCafetera(cafetera);
-                case 4 -> servicio.agregarCafe(cafetera);
+                case 1 ->
+                    cafetera1.setCantidadActual(cafeteraServicio.llenarCafetera(cafetera1));
+                case 2 ->
+                    cafeteraServicio.servirTaza(cafetera1);
+                case 3 ->
+                    cafeteraServicio.vaciarCafetera(cafetera1);
+                case 4 ->
+                    cafeteraServicio.agregarCafe(cafetera1);
                 case 5 -> {
-                    System.out.println("Capacidad maxima: " + cafetera.getCapacidadMaxima());
-                    System.out.println("Cantidad actual: " + cafetera.getCantidadActual());
+                    System.out.println("Capacidad maxima: " + cafetera1.getCapacidadMaxima());
+                    System.out.println("Cantidad actual: " + cafetera1.getCantidadActual());
                 }
                 default -> {
                 }

@@ -2,38 +2,30 @@ package Ejercicio2.entidad;
 
 public class Cafetera {
 
-    private int capacidadMaxima;
-    private int cantidadActual;
+    private int CapacidadMaxima;
+    private int CantidadActual;
 
     public Cafetera() {
     }
 
-    public Cafetera(int capacidadMaxima, int cantidadActual) {
-        this.capacidadMaxima = capacidadMaxima;
-        this.cantidadActual = cantidadActual;
+    public Cafetera(int CapacidadMaxima, int CantidadActual) {
+        this.CapacidadMaxima = CapacidadMaxima;
+        this.CantidadActual = CantidadActual;
     }
 
     public int getCapacidadMaxima() {
-        return capacidadMaxima;
+        return CapacidadMaxima;
     }
 
-    public void setCapacidadMaxima(int capacidadMaxima) {
-        this.capacidadMaxima = capacidadMaxima;
+    public void setCapacidadMaxima(int CapacidadMaxima) {
+        this.CapacidadMaxima = CapacidadMaxima;
     }
 
     public int getCantidadActual() {
-        return cantidadActual;
+        return CantidadActual;
     }
 
-    public void setCantidadActual(int cantidadActual) {
-        this.cantidadActual = cantidadActual;
-    }
-
-    @Override
-    public String toString() {
-        return "Cafetera{"
-                + "capacidadMaxima=" + capacidadMaxima
-                + ", cantidadActual=" + cantidadActual
-                + '}';
+    public void setCantidadActual(int CantidadActual) {
+        this.CantidadActual = CantidadActual;
     }
 }

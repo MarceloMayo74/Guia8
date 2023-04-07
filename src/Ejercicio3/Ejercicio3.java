@@ -16,23 +16,15 @@
 package Ejercicio3;
 
 import Ejercicio3.entidad.Persona;
+
 import Ejercicio3.servicio.PersonaServicio;
 
-/**
- *
- * @author Marcelo
- */
 public class Ejercicio3 {
 
     public static void main(String[] args) {
         PersonaServicio servicio = new PersonaServicio();
         int[] IMC = new int[4];
         boolean[] EDADES = new boolean[4];
-//        Persona persona1 = new Persona("Yasar",29,"h",114,1.79);
-//        Persona persona2 = new Persona("Victoria",31,"m",80,1.69);
-//        Persona persona3 = new Persona("Enzo",17,"h",75,1.83);
-//        Persona persona4 = new Persona("Eric",25,"h",50,1.75);
-
         Persona persona1 = servicio.crearPersona();
         servicio.calcularIMC(persona1);
         servicio.esMayorDeEdad(persona1);
@@ -59,7 +51,6 @@ public class Ejercicio3 {
 
         calcularPromEdades(EDADES);
         calcularPromImc(IMC);
-
     }
 
     public static void calcularPromEdades(boolean[] Edades) {
@@ -78,7 +69,6 @@ public class Ejercicio3 {
         System.out.println("Porcentaje Mayores: " + porcMayores + "%");
         porcMenores = ((menores * 100) / Edades.length);
         System.out.println("Porcentaje Menores: " + porcMenores + "%");
-
     }
 
     public static void calcularPromImc(int[] IMC) {
@@ -109,5 +99,4 @@ public class Ejercicio3 {
         porSobre = ((sobrePeso * 100) / IMC.length);
         System.out.println("Porcentaje sobrepeso: " + porSobre + "%");
     }
-
 }

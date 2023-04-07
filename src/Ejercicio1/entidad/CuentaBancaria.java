@@ -38,13 +38,4 @@ public class CuentaBancaria {
     public void setSaldoActual(double SaldoActual) {
         this.SaldoActual = SaldoActual;
     }
-
-    @Override
-    public String toString() {
-        return "CuentaBancaria{"
-                + "numeroCuenta=" + NumeroCuenta
-                + ", dniCliente=" + DniCliente
-                + ", saldoActual=" + SaldoActual
-                + '}';
-    }
 }
